@@ -17,7 +17,7 @@ RUN useradd --create-home -s /bin/bash $user \
 
 WORKDIR $home
 
-COPY build-bfin-toolchain.sh .
+COPY build/build-bfin-toolchain.sh .
 
 RUN chmod +x build-bfin-toolchain.sh
 
